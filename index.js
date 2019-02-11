@@ -6,7 +6,7 @@ module.exports = array => {
 	}
 
 	for (const item of array) {
-		if (!(item.constructor === Array)) {
+		if (!(item && item.constructor === Array)) {
 			return false;
 		}
 	}
